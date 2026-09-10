@@ -1,0 +1,7 @@
+salario = float(input('Digite o valor do seu salário: R$'))
+if salario<=1250:
+    calculo = salario + (salario * 15/100)
+    print(f'Com o aumento seu salário passou a ser {calculo}')
+else: 
+    calculo2 = salario + (salario * 10/100)
+    print(f'Seu salário passou a ser {calculo2}')

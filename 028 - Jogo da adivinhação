@@ -1,0 +1,12 @@
+import random
+from time import sleep
+print('--**--'*10)
+pc = random.randint(1 , 5)
+usuario = int(input('Qual número você acha que será sorteado?Escolha um número de 1 a 5:  '))
+print('--/'*10)
+print(f'Processando....')
+sleep(3)
+if pc == usuario:
+    print(f'True, o número sorteado foi {pc}')
+else:
+    print(f'False, o número foi {pc}')

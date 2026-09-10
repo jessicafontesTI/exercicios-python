@@ -1,0 +1,16 @@
+num = int(input('\033[0mDigite um número inteiro:\033[m '))
+tot = 0
+for i in range (1, num + 1):
+    if num % i == 0:
+        print('\033[1;32m')
+        tot = tot + 1
+    else:
+        print('\033[1;31m')
+    
+    print(i)
+if tot == 2:
+    print('\033[4;34mEsse número é primo\033[0m')
+else:
+    print('\033[4;34mEsse número não é primo\033[0m')
+
+print(f"\033[0;33mO número {num} foi divisivel por {tot} vezes")

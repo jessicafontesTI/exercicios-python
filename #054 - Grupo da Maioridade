@@ -1,0 +1,12 @@
+from datetime import date
+hoje = date.today().year
+cont1 = 0
+cont2 = 0
+
+for i in range (1, 8):
+    nasc = int(input(f'{i} - Digite o ano do seu nascimento: '))
+    if hoje - nasc >= 18:
+        cont1 = (cont1 + 1)
+    else:
+        cont2 = (cont2 + 1)
+print(f'Temos {cont1} maiores de idade e {cont2} menores de idade')

@@ -1,0 +1,6 @@
+num = float(input('Digite um número: '))
+# subtração = num-1
+# print(f'Seu antecessor é: {subtração}')
+# soma = num+1
+# print(f'Seu sucessor é: {soma}')
+print(f'Analisando o valor {num}, seu antecessor é {num-1} e o seu sucessor é {num+1}')

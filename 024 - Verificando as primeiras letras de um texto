@@ -1,0 +1,3 @@
+cidade = input('Digite a cidade em que você nasceu: ').upper().split()
+r = 'SANTO' in cidade
+print(f'{r}')

@@ -1,0 +1,20 @@
+#frase= str(input('Digite uma frase: ')).strip() .upper()
+#palavras = frase.split()
+#junto = ''.join(palavras)
+#inverso = '' 
+#for i in range (len(junto) -1, -1, -1):
+#    inverso = (inverso + junto[i])
+#if inverso == junto:
+#    print('Essa palavra é Palíndromo')
+#else:
+#    print('Essa palavra não é Palíndromo')
+
+
+frase = str(input('Digite uma Frase: ')).strip() .upper()
+palavra = frase.split()
+junto = ''.join(palavra)
+leitura = junto[: : -1]
+if leitura == junto:
+    print('Essa frase é um Políndromo')
+else:
+    print('Essa frase não é um Políndromo')

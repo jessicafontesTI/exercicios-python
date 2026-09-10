@@ -1,0 +1,18 @@
+valor = str(input('Digite um valor de 9 a 9999 inteiro: ')).strip()
+print(f'Analisando o número {valor} temos:')
+try:
+    print(f'A unidade do numero é: {valor[-1]}')
+except: 
+    print('A unidade do número nesse caso, não temos!')
+try:
+    print(f'A Dezena  do número é: {valor[-2]}')
+except:
+    print(f'A Dezena do número nesse caso, não temos!')
+try:
+    print(f'A centena do número é: {valor[-3]}')
+except:
+    print(f'A centena do número nesse caso, não temos!')
+try:
+    print(f'A milhar  do número é: {valor[-4]}')
+except:
+    print(f'A milhar do número nesse caso, não temos!')

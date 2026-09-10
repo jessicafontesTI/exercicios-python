@@ -1,0 +1,17 @@
+#from math import factorial 
+
+#num=int(input("Digite um número para seu fatorial: "))
+#fac = factorial(num)
+#print(f'O Fatorial de {num} é {fac}')
+
+num = int(input("Digite um número para seu fatorial: "))
+fatorial = 1
+contador = num
+print(f"O Cálculo de {num}! é: ", end=' ')
+while contador > 0:
+
+    print(contador, end=' ')
+    print('x' if contador > 1 else '=', end=' ')
+    fatorial = fatorial * contador
+    contador = contador - 1
+print(f'{fatorial}')

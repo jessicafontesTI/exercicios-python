@@ -1,0 +1,4 @@
+valor1 = int(input("Digite um valor positivo: "))
+valor2 = int (input("Digite outro valor positivo: "))
+resultado = valor1 + valor2
+print(f"O resultado da soma dos valores é: {resultado}")

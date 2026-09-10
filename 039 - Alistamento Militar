@@ -1,0 +1,17 @@
+from datetime import date
+atual = date.today().year
+
+data = int(input('Qual oi seu ano de nascimento? '))
+
+anos = atual - data
+
+if anos == 18:
+    print('Você deve se alistar IMEDIATAMENTE')
+
+elif anos < 18:
+    falta = 18 - anos
+    print(f'Você tem {anos} anos e deverá se alistar em {falta} ano(s)')
+
+else:
+    atraso = anos - 18
+    print(f'Você tem {anos} anos e deveria ter se alistado há {atraso} ano(s)')
