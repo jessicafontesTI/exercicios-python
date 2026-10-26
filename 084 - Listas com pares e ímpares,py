@@ -1,0 +1,38 @@
+'''lista = []
+par = []
+impar = []
+for c in range(1,8):
+    n=int(input(f"Digite o {c}° valor: "))
+    lista.append(n)
+    lista.sort()
+
+    if n % 2 == 0:
+        par.append(n)
+    else:
+        impar.append(n)
+
+    par.sort()
+    impar.sort()
+
+
+print(f'A lista completa {lista}')
+print(f'Os números pares foram {par}')
+print(f'Os números ímpares foram {impar}') '''
+
+
+lista = [[], []]
+n = 0
+for c in range (1,8):
+    n = int(input(f"Digite o {c}° valor: "))
+    if n % 2 == 0:
+        lista[0].append(n)
+    else:
+        lista[1].append(n)
+    
+   
+    lista[0].sort()
+    lista[1].sort()
+
+print(f'A lista completa {lista}\n')
+print(f'Os números pares digitados foram {lista[0]}\n')
+print(f'Os números ímpares digitados foram {lista[1]}')
